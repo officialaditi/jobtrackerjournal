@@ -1,0 +1,32 @@
+{
+    "name": "jobtrackerjournal",
+    "version": "1.0.0",
+    "description": "making this project to store all my job application in one place and track it for the future scedules",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node backend/server.js",
+        "server": "nodemon backend/server.js",
+        "client": "npm run dev --prefix client",
+        "dev": "concurrently \npm run server\" \npm run client\""
+    },
+    "keywords": [
+        "node.js",
+        "express.js",
+        "jwt",
+        "javascript",
+        "react"
+    ],
+    "author": "aditi",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^6.0.0",
+        "colors": "^1.4.0",
+        "dotenv": "^17.4.2",
+        "express": "^5.2.1",
+        "jsonwebtoken": "^9.0.3",
+        "mongoose": "^9.7.2",
+        "nodemon": "^3.1.14"
+    }
+}
