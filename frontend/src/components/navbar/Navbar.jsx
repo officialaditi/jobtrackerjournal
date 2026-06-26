@@ -9,7 +9,7 @@ import { Button } from "../ui/button";
 
 const Navbar = () => {
     return (
-        <div className="bg-slate-200 w-full top-0 left-0  py-6 px-3 flex items-center justify-between">
+        <div className="bg-slate-200 w-full  fixed top-0 left-0  py-6 px-3 flex items-center justify-between">
             <Link to="/">
                 <h1 className="font-bold text-3xl hover:cursor-pointer">
                     Job Tracker
@@ -22,13 +22,10 @@ const Navbar = () => {
                 >
                     <Tooltip>
                         <TooltipTrigger>
-                            <Button
-                                variant="outline"
-                                size="icon"
-                                className="h-10 w-10"
-                            >
-                                <Bookmark className="w-10 h-10" />
-                            </Button>
+                            <span className=" bg-white rounded-full border-2 border-slate-200 flex items-center justify-center py-2 px-2">
+                                {" "}
+                                <Bookmark />
+                            </span>
                         </TooltipTrigger>
                         <TooltipContent>
                             <p className="text-lg ">Saved Job</p>
